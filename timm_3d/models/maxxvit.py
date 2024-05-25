@@ -70,7 +70,7 @@ class MaxxVitTransformerCfg:
     pool_type: str = 'avg2'
     rel_pos_type: str = 'bias'
     rel_pos_dim: int = 512  # for relative position types w/ MLP
-    partition_ratio: int = 32
+    partition_ratio: int = 4
     window_size: Optional[Tuple[int, int, int]] = None
     grid_size: Optional[Tuple[int, int, int]] = None
     no_block_attn: bool = False  # disable window block attention for maxvit (ie only grid)
